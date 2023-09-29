@@ -688,8 +688,16 @@ video {
   max-width: 450px;
 }
 
+.max-w-\[470px\] {
+  max-width: 470px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-none {
+  cursor: none;
 }
 
 .items-center {
@@ -884,6 +892,42 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:bg-VeryGray\/40:hover {
+  background-color: rgb(57 64 80 / 0.4);
+}
+
+.hover\:bg-VeryGray\/20:hover {
+  background-color: rgb(57 64 80 / 0.2);
+}
+
+.hover\:bg-DesaturedGray\/20:hover {
+  background-color: rgb(161 161 169 / 0.2);
+}
+
+.hover\:bg-slate-500\/20:hover {
+  background-color: rgb(100 116 139 / 0.2);
+}
+
+.hover\:bg-slate-500\/40:hover {
+  background-color: rgb(100 116 139 / 0.4);
+}
+
+.hover\:bg-slate-400\/40:hover {
+  background-color: rgb(148 163 184 / 0.4);
+}
+
 .hover\:bg-gradient-to-t:hover {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -896,6 +940,11 @@ video {
 
 .hover\:to-LightViolet:hover {
   --tw-gradient-to: #7B4EE5 var(--tw-gradient-to-position);
+}
+
+.hover\:text-LightViolet:hover {
+  --tw-text-opacity: 1;
+  color: rgb(123 78 229 / var(--tw-text-opacity));
 }
 
 .focus\:border-LightViolet:focus {
@@ -927,5 +976,11 @@ video {
 
   .md\:w-\[700px\] {
     width: 700px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:p-12 {
+    padding: 3rem;
   }
 }
