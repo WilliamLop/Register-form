@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter">
+
+    <main class="h-screen bg-VeryDark relative w-full grid items-center  overflow-hidden">
+        <img src="./images/blur-radial.svg" alt="" class="absolute top-[-120px]
+        left-[-160px] w-[700px] md:top-[-220px]
+        md:left-[-320px]">
+        <div class="grid gap-4">
+            <!-- Container -->
+            <div class="bg-Dark max-container shadow-md max-w-[450px] p-8  rounded-xl border-[1px] w-[90%] border-DesaturedGray/30 z-30">
+                <div class="">
+                    <!-- Form -->
+                    <form action="" class="grid gap-6" id="form">
+                        <!-- Register -->
+                        <div class="grid gap-4" id="register-container">
+                            <h2 class="text-DesaturedWhite font-semibold text-xl">Register</h2>
+                            <div class="grid-input mt-4">
+                                <!-- Name -->
+                                <label for="nombre" class="label">Name</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="enter your name" class="input
+                                focus:outline-none focus:border-LightViolet"
+                                autocomplete="off">
+                                <p class="mt-1 text-red-500 text-[12px] hidden" id="text-error">
+                                    ❌ Please provide a name ❌
+                                </p>
+                            
+                            </div>
+                            <div class="grid-input">
+                                <!-- Email -->
+                                <label for="email" class="label">
+                                Email</label>
+                                <input type="text" name="email" id="email" placeholder="example@gmail.com" class="input
+                                focus:outline-none focus:border-LightViolet" >
+                                <p class="mt-1 text-red-500 text-[12px] hidden" id="text-error">
+                                    ❌ Please provide a valid email address ❌
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- topics -->
+                        <div class="hidden" id="topics-container">
+                            <h2 class="text-DesaturedWhite font-semibold">Which topics you are interested in?</h2>
+                            <div class="grid gap-4 mt-6">
+                                <label for="topic" class="bg-VeryGray cursor-pointer relative w-full rounded-lg py-2 topic" id="topic-label">
+                                    <input type="checkbox" name="topic" value="Software Development" id="topic-id" class="w-full cursor-pointer
+                                    absolute inset-0 opacity-0">
+                                    <span class="text-[12px] text-DesaturedGray pl-4 font-light" id="spanTopics">Software Development</span>
+                                </label>
+                                <label for="topic" class="bg-VeryGray cursor-pointer relative w-full rounded-lg py-2 topic" id="topic-label">
+                                    <input type="checkbox" name="topic" value="User Experience" id="topic-id" class="w-full cursor-pointer
+                                    absolute inset-0 opacity-0">
+                                    <span class="text-[12px] text-DesaturedGray pl-4 font-light" id="spanTopics">User Experience</span>
+                                </label>
+                                <label for="topic" class="bg-VeryGray cursor-pointer relative w-full rounded-lg py-2 topic" id="topic-label">
+                                    <input type="checkbox" name="topic" value="Graphic Design" id="topic-id" class="w-full cursor-pointer
+                                    absolute inset-0 opacity-0">
+                                    <span class="text-[12px] text-DesaturedGray pl-4 font-light" id="spanTopics">Graphic Design</span>
+                                </label>
+                                <p class="text-red-500 text-[12px] hidden" id="text-error-topics">
+                                    👆 Select at least one 🚩
+                                </p >
+                            </div>
+                        </div>
+    
+                        <!-- Mostar Informacion -->
+                        <div class="hidden grid gap-4" id="data-container">
+                            <h2 class="text-DesaturedWhite font-semibold">Summary</h2>
+                            <div class="mt-4" id="data-content">
+    
+                            </div>
+                        </div>
+                        <input type="submit" value="Continue" class="text-[12px] text-DesaturedWhite font-medium cursor-pointer 
+                        hover:from-violet-600 hover:to-LightViolet hover:bg-gradient-to-t
+                        bg-gradient-to-r from-LightViolet to-VeryViolet py-2 rounded-full w-[100px] mx-auto mt-2" id="button">
+                        
+                    </form>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="flex justify-center items-center gap-4">
+                <!-- Info Step -->
+                <div class="" id="step">
+                    <p id="step-paragraph" class="text-DesaturedGray text-sm"></p>
+                </div>
+                <!-- Contenedores step -->
+                <div class="">
+                    <div class="flex items-center gap-3">
+                        <button class="bg-VeryViolet/30 p-1 flex items-center rounded-full" id="set-btn">
+                            <span class="bg-LightViolet p-1 w-[5px] h-[5px] rounded-full" id="set-span"></span>
+                        </button>
+                        <button class="bg-DesaturedGray/50 flex items-center rounded-full" id="set-btn">
+                            <span class=" p-1 w-[5px] h-[5px] rounded-full" id="set-span"></span>
+                        </button>
+                        <button class="bg-DesaturedGray/50 flex items-center rounded-full" id="set-btn">
+                            <span class="p-1 w-[5px] h-[5px] rounded-full" id="set-span"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/blur-radial.svg" alt="" class="absolute md:bottom-[-330px]
+        md:right-[-240px] md:w-[700px] bottom-[-180px]
+        right-[-190px] w-[700px]">
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

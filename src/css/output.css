@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .max-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .label{
+        font-size: .75rem;
+        font-weight: 600;
+        color: #A1A1A9;
+    }
+    .input{
+        border: 2px solid #a1a1a94b;
+        border-radius: .5rem;
+        padding: .8rem 0 .8rem 1rem;
+        background-color: transparent;
+        color: #E5E7EB;
+        margin-top: .3rem;
+        font-size: .75rem;
+    }
+    .input::placeholder{
+        font-size: .75rem;
+        color: #a1a1a977;
+    }
+
+    .topic{
+        border: .3px solid rgba(212, 212, 212, 0.253)
+    }
+
+    .input:focus{
+        outline: none;
+        border-color:#6F3DDA;
+    }
+    .grid-input{
+        display: grid;
+        gap: .2rem;
+    }
+
+    .clip-inset-0{
+        height: 0px;
+        clip-path: circle(0.7% at 50% 50%);
+        transition: .5s ease-in-out;
+    }
+    .clip-inset-100{
+        height: auto;
+        clip-path: circle(75.1% at 51% 57%);
+        transition: .5s ease-in-out;
+    }
+}
